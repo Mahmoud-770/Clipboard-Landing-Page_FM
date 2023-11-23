@@ -1,0 +1,215 @@
+/* * * * * S T A R T - G L O B A L - S T Y L E * * * * */
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+/* * G L O B A L - H E A D I N G * */
+h1{color: hsl(210, 10%, 33%);margin-bottom: 15px;}
+
+/* * G L O B A L - P A R A G R A P H * */
+p{color: hsl(201, 11%, 66%);font-weight: 400;}
+
+/* * G L O B A L - B U T T O N * */
+button{
+    width: 250px;
+    padding: 15px;
+    margin: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    color: #FFFFFF;
+    transition: .3s ease-in-out;
+}
+.buttons button:first-child{
+    background: hsl(171, 66%, 44%);
+    box-shadow: 0px 2px 5px hsl(171, 66%, 44%);
+}
+.buttons button:last-child{
+    background:hsl(233, 100%, 69%);
+    box-shadow: 0px 2px 5px hsl(233, 100%, 69%);
+}
+button:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+/* * * * * E N D - G L O B A L - S T Y L E * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * S T A R T - L A N D I N G - S E C T I O N * * * * */
+.landing{
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-image: url(images/bg-header-desktop.png);
+}
+.landing h1{font-size: 40px}
+
+@media (max-width:700px){
+    .landing{
+        padding: 40px 15px;
+        justify-content: space-evenly;
+    }
+    .landing h1{font-size: 35px;}
+}
+/* * * * * E N D I N G - L A N D I N G - S E C T I O N * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * S T A R T - T R A C K - S E C T I O N * * * * */
+.track h1{font-size: 35px;}
+.track .content{
+    display: flex;
+    margin: 100px 0;
+}
+.content .txt{
+    width: 330px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.content .txt h1,
+.content .txt p{text-align: left;}
+.content h1{font-size: 25px;}
+.content p{font-size: 18px;}
+
+@media (max-width:700px){
+    .track{padding: 40px 15px;}
+    .track h1{font-size: 30px;}
+    .track p {font-size: 17px;}
+    .content{flex-direction: column;}
+    .content .txt{
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .content .txt div{margin-top: 50px;}
+    .content .txt h1,
+    .content .txt p{text-align: center;}
+}
+/* * * * * E N D I N G - T R A C K - S E C T I O N * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * S T A R T - C L I P B O A R D - S E C T I O N * * * * */
+.clip{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.clip .txt{
+    width: 650px;
+    margin: 50px auto;
+}
+
+@media (max-width:700px){
+    .clip{width: auto;}
+    .clip .txt{width: auto;padding: 30px;}
+}
+/* * * * * E N D I N G - C L I P B O A R D - S E C T I O N * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * S T A R T - C L I P B O A R D - S E C T I O N * * * * */
+.workflow .txt{padding: 70px 0;}
+.workflow .content{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.workflow .content div{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.workflow .content div img{
+    width: 40px;
+    margin-bottom: 40px;
+}
+
+@media (max-width:700px){
+    .workflow .content div{
+        width: auto;
+        margin: 30px 0;
+    }
+}
+/* * * * * E N D I N G - C L I P B O A R D - S E C T I O N * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * S T A R T - S P O N S E R S - S E C T I O N * * * * */
+.spons{
+    padding: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media (max-width:700px){
+    .spons{
+        height: 667px;
+        padding: 40px 15px;
+        flex-direction: column;
+    }
+}
+/* * * * * E N D I N G - S P O N S E R S - S E C T I O N * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * S T A R T - S P O N S E R S - S E C T I O N * * * * */
+.clipboard{padding: 40px 25px;}
+.clipboard .txt{margin-bottom: 30px;}
+/* * * * * E N D I N G - S P O N S E R S - S E C T I O N * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * S T A R T - F O O T E R - S E C T I O N * * * * */
+.footer{
+    display: flex;
+    padding: 20px 150px;
+    color: hsl(210, 10%, 33%);
+    background: #eee;
+    justify-content: space-around;
+}
+.footer img{width: 50px;height: 50px;}
+.footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer p{margin-bottom: 30px;}
+.footer p:hover{
+    cursor: pointer;
+    color: hsl(171, 66%, 44%);
+}
+.footer .ico{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.footer .ico img{
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width:700px){
+    .footer{
+        padding: 40px 15px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer div{align-items: center;}
+    .footer img{margin-bottom: 40px;}
+    .ico img{margin: 0;}
+}
+/* * * * * E N D I N G - F O O T E R - S E C T I O N * * * * */
